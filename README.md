@@ -1,2 +1,14 @@
-# happy
-# name = venkat jogi # date = 05-05-2024 # program = hello world program in python  print("venkat jog")
+a=[10,501,22,37,100,999,87,351]
+b=[]
+defhappy(a):
+for i in range(len(a)):
+sum=a[i]
+while sum!=1 and sum !=4:
+tempsum=0
+for digit in str(sum):
+tempsum+=int(digit)**2
+sum=tempsum
+if sum==1:
+b.append(a[i]0)
+return b
+print(happy(a))
